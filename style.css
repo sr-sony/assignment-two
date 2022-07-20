@@ -11,11 +11,11 @@ main{
     margin-right: 140px;
 }
 /* feauture styles */
-.container header{
+.container{
     width: 100%;
 }
 
-.container-header{
+.container{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     justify-items: center; 
@@ -48,10 +48,6 @@ main{
 
 .btn{
     padding: 16px 25px;
-    /* width:150px; */
-    /* box-shadow:inset 0 0 0 0 #f9e506;
-    transition:ease-out 0.3s;
-     */
     outline:none;
     background:#DD0000;
     border-radius: 5px;
@@ -91,8 +87,6 @@ main{
 }
 
 .blog-btn{
-    /* width: 252px;
-    height: 64px; */
     text-align: center;
     background-color: #FFFFFF;
     text-decoration: none;
@@ -122,9 +116,7 @@ main{
 .main-container{
     display: flex;
     margin-top: 130px;
-    
-}
-.blog-buttons{
+    /* margin-left: 0px; */
     
 }
 
@@ -137,8 +129,8 @@ main{
 .blog{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
-    width: 312px;
-height: 362px;
+    /* width: 312px;
+    height: 362px; */
 }
 .blog-info{
     padding: 20px;
@@ -233,4 +225,156 @@ hr{
 
 .footer-items .social-icons .fa-brands{
     font-size: 40px;
+}
+
+/* Media Queries  */
+
+/* For small Devices  */
+@media only screen and (max-width: 576px) {
+    main{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        background-color:#161616;
+        border-radius: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container-info{
+        text-align: center;
+    }
+
+    .container-info h1{
+        font-size: 22px;
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 25px;
+    }
+    .blog-buttons{
+        width: 75%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        height: 250px;
+        padding-left: 100px;
+        margin-left: 0;
+
+    }
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+        margin-right: 0;
+    }
+ 
+    hr{
+        margin: 0 60px;
+    }
+   
+    .footer-items{
+        margin-top: 20px;
+    }
+
+    .footer-items a{
+        display: block;
+    }
+}
+
+/* For Tablet Devices */
+@media only screen and (max-width: 576px) {
+    main{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        background-color:#161616;
+        border-radius: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 0;
+        width: 90%;
+    }
+    .container-info{
+        text-align: center;
+    }
+
+    .container-info h1{
+        font-size: 28px;
+    }
+
+    .container-image{
+        padding-top: 0;
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 25px;
+    }
+    .blog-buttons{
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        margin-left: 0;
+        justify-content: space-between;
+        color: #161616;
+    }
+
+    .blog-buttons .blog-button .blog-btn{
+        display: inline-block;
+        padding: 10px 16px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 35px;
+        margin-left: 111px;
+        margin-bottom: 0;
+    }
+
+    .blogs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-grow: 1;
+        grid-gap: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .view-all{
+        margin-left: 352px;
+        /* margin-right: 352px; */
+        margin-top: 45px;
+        background-color: #DD0000;
+        border-radius: 5px;
+        padding: 12px 29px;
+        border: none;
+        color: #FFFFFF;
+        display: block;
+    }
+    
+    .footer-items{
+        margin-right: 120px;
+        margin-left: 150px;
+    }
 }
