@@ -176,6 +176,22 @@ font-size: 18px;
     padding-right: 10px;
 }
 
+/* view all button style  */
+.view-all{
+    background-color: #DD0000;
+    border-radius: 5px;
+    margin-left: 700px;
+    margin-top: 50px;
+    border: none;
+    color: #FFFFFF;
+    padding: 12px 29px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    display: none;
+
+}
 
 /* footer styles */
 footer{
