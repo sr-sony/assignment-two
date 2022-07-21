@@ -14,7 +14,9 @@ main{
 .container{
     width: 100%;
 }
-
+/* ----------------------------
+========header styles==========
+------------------------------- */
 .container{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
@@ -77,7 +79,9 @@ main{
     padding-top: 25px;
 }
 
-
+/* ------------------------------
+===========Side menu choose styles===========
+ --------------------------------*/
 
 .blog-buttons{
     width: 312px;
@@ -123,7 +127,7 @@ main{
 }
 
 
-/* blogs */
+/* blogs style */
 .main-container{
     display: flex;
     margin-top: 130px;
@@ -263,7 +267,7 @@ hr{
 
 
 
-
+/* upcoming blog styles  */
 
 .upcoming-blog{
     height: 240px;
