@@ -18,7 +18,7 @@ main{
 .container{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    justify-items: center; 
+    justify-content: center; 
     align-items: center;
     margin-left: 140px;
     margin-right:140px;
@@ -55,6 +55,16 @@ main{
     border: 0px;
     font-weight: 400;
     font-size: 20px;
+    transition: width 2s;
+    
+}
+#watch{
+    transition-timing-function: ease-in-out;
+}
+
+.btn:hover{
+    width: 300px;
+    background-color: rgb(5, 90, 159);
 }
 
 .fa-angle-right{
